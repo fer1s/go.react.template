@@ -1,0 +1,32 @@
+.home h1 {
+    font-size: 50px;
+}
+
+.home h2 {
+    font-size: 30px;
+}
+
+.home p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.home .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 90px;
+}
+
+.home .logos img {
+    width: 90px;
+    margin: 0 10px;
+    filter: contrast(0%);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.home .logos img:hover {
+    filter: contrast(100%);
+    transform: scale(1.1);
+}

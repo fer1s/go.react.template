@@ -1,0 +1,92 @@
+.auth_card {
+   background-color: rgba(255, 255, 255, 0.07);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   border-radius: 8px;
+   max-width: 80%;
+   min-width: 20%;
+   box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.auth_card .card_header,
+.auth_card .card_content {
+   padding: 10px;
+}
+
+.auth_card .card_header {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   h1 {
+      font-size: 24px;
+   }
+   p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.5);
+   }
+}
+
+.auth_card .card_content .input_container {
+   margin-bottom: 10px;
+   p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      margin-bottom: 1px;
+   }
+   input {
+      width: 100%;
+      padding: 9px 14px;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      border-radius: 6px;
+      color: #fff;
+      font-family: 'Satoshi', sans-serif;
+      transition: 0.4s;
+      &:hover {
+         border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+      &:focus {
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 3px;
+      }
+   }
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.auth_card .card_content button {
+   width: 100%;
+   padding: 9px 14px;
+   outline: none;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   background-color: transparent;
+   border-radius: 6px;
+   color: rgba(255, 255, 255, 0.4);
+   font-weight: 400;
+   font-family: 'Satoshi', sans-serif;
+   transition: 0.4s;
+   cursor: pointer;
+   &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.06);
+   }
+}
+
+.back_arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.back_arrow i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .auth_card {
+        width: 60%;
+    }
+}
